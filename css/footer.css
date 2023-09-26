@@ -1,0 +1,102 @@
+.footer {
+    height: 140px;
+    padding-top: 47px;
+    padding-bottom: 47px;
+    background-color: var(--color-black);
+}
+
+.footer .container {
+    justify-content: space-between;
+}
+
+.footer__social-link a {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.footer__social-link a:last-child {
+    margin-right: 0;
+}
+
+.social-link:hover path{
+    fill: var(--text-white);
+}
+
+.social-link:active path{
+    fill: var(--violet-middle);
+}
+
+.social-link:focus path{
+    fill: var(--text-white);
+    outline: none;    
+}
+
+.social-link:focus {
+    outline: none;    
+}
+
+@media (max-width: 1200px) {
+    .footer img {
+        width: 173px;
+        height: 39.9px;
+    }
+    .footer__social-link a {
+        margin-right: 30px;
+    }
+    .social-link {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .footer img {
+        width: 96.8px;
+        height: 21.67px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .footer .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        padding-bottom: 20px;
+    }
+    .social-link {
+        width: 50px;
+        height: 50px;
+    }
+    .footer__social-link {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .footer img {
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
+        width: 96.8px;
+        height: 21.67px;
+        margin-bottom: 0;
+    }
+}
